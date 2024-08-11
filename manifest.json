@@ -1,0 +1,23 @@
+{
+  "name": "Linkedin seek hunter",
+  "version": "1.0.0",
+  "description": "Está é uma extensão para capturar oportunidades interessantes nas vagas do linkedin",
+  "manifest_version": 3,
+  "author": "Fuyu",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Linkedin seek hunter"
+  },
+  "icons": {
+    "16": "linkedin.png",
+    "48": "linkedin.png",
+    "128": "linkedin.png"
+  },
+ "content_scripts": [
+   {
+     "matches": ["https://www.linkedin.com/*"],
+     "js": ["script.js"]
+   }
+ ]
+}

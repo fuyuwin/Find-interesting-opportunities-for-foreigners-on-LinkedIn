@@ -1,0 +1,40 @@
+body {
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  width:220px;
+}
+
+h1 {
+  width:100%;
+}
+
+input {
+  padding:10px;
+  border:1px solid gray;
+  border-radius:100px;
+  width:100%;
+  max-width:200px;
+}
+
+button {
+  display:block;
+  padding:10px 15px;
+  background:#4585FB;
+  color:white;
+  border-radius:100px;
+  width:100%;
+  font-weight:700;
+  border:none;
+  margin-top:20px;
+  cursor: pointer;
+}
+
+button:active {
+  filter:brightness(90%);
+}
+
+button:hover {
+  cursor: pointer;
+  filter:brightness(98%);
+}
