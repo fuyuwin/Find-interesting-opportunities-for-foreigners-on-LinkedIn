@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener(
   async function(request, sender, sendResponse) {
     if (request.message === "executeScriptOnUserPage") {
       applySmoothScroll();
-      const times = 2; //To times to ensure that it loads all
+      const times = 1; //To times to ensure that it loads all
       for(const i = 0; i < times; i++) {
         await executeScriptOnUserPage();
       }
